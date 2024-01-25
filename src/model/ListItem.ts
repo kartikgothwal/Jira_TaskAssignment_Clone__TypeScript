@@ -10,21 +10,27 @@ export default class ListItem implements Item {
     private _checked: boolean = false
   ) {}
   get id(): string {
-    return this.id;
+    return this._id;
   }
+
   set id(id: string) {
-    this.id = id;
+    this._id = id;
   }
+
   get item(): string {
-    return this.item;
+    return this._item;
   }
+
   set item(item: string) {
-    this.item = item;
+    this._item = item;
   }
+
   get checked(): boolean {
-    return this.checked;
+    return this._checked;
   }
+
   set checked(checked: boolean) {
-    this.checked = checked;
+    this._checked = checked;
   }
 }
+ 
